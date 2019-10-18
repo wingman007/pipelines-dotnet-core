@@ -30,11 +30,11 @@ steps:
   inputs:
     pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
     artifactName: 'myWebsiteName'
-#- task: AzureWebApp@1
-#  inputs:
-#    azureSubscription: '<Azure service connection>'
-#    appName: '<Name of web app>'
-#    package: $(System.ArtifactsDirectory)/**/*.zip 
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'Azure subscription 1(448bcccf-d30d-4036-8dc5-11adaf7935b4)'
+    appName: 'BuildTestAndDeployDotNetCoreApps'
+    package: $(System.ArtifactsDirectory)/**/*.zip 
 
 
 
